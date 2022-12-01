@@ -1,47 +1,44 @@
 //font-size
-$fs-1: 0.8rem;
-$fs-2: 0.9rem;
-$fs-3: 16px;
-$fs-4: 1.1rem;
-$fs-5: 1.2rem;
-$fs-6: 1.5rem;
-$fs-7: 2rem;
+$fs-1: 0.8em;
+$fs-2: 1em;
+$fs-3: 13px;
 
 //color
-
-$color-white: white;
-$color-black: black;
-$color-black-2: #212124;
-$color-grey-1: #d7d7d7;
-$color-grey-2: #f5f5f7;
+$color-white-1: #f1f1f1;
+$color-orange-1: #ee5b54;
+$color-blue-1: #21759b;
+$color-black-1: #181818;
+$color-yellow-1: #ffde39;
+$color-purple-1: #b61984;
+$color-pink-1: #dcd1f3;
 
 //border-radius
 
 $br-1: 10px;
-$br-2: 20px;
+$br-2: 50px;
 $br-3: 50%;
 
 //font-weight
 
 $fw-1: 400;
 $fw-2: 600;
-$fw-3: 700;
+$fw-3: 500;
+$fw-4: 700;
 
 //padding
-$pd-1: 2px;
-$pd-2: 5px;
-$pd-3: 6px;
-$pd-4: 10px;
-$pd-5: 20px;
-$pd-6: 1rem;
-$pd-7: 2rem;
-$pd-8: 4%;
-$pd-9: 5%;
+$pd-1: 1.1em;
+$pd-2: 1.5em;
+$pd-3: 30px;
+//margin
+$mg-1: 6px;
 
+// font family
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
 //break points
 $breakpoints: (
-    "extra-large": 1200px,
-    "large": 992px,
-    "medium": 768px,
-    "small": 576px,
+   'extra-large': 1200px,
+   'large': 992px,
+   'medium': 768px,
+   'small': 576px,
 );

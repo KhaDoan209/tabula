@@ -1,0 +1,6 @@
+.title {
+   @include styleText(1.2rem, $fw-2, $color-purple-1);
+   margin-bottom: 0.3rem;
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+}

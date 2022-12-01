@@ -1,0 +1,121 @@
+.banner {
+   .banner-img {
+      right: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: -1;
+      img {
+         max-width: 100%;
+         width: 100%;
+         height: auto;
+         display: block;
+      }
+   }
+
+   .banner-left-content {
+      display: flex;
+      justify-content: center;
+      flex-flow: column nowrap;
+      padding: 50% 0;
+      height: auto;
+      h5 {
+         line-height: 1.2;
+      }
+      span {
+         @include styleText(6.4rem, 700, inherit);
+         line-height: 1.2;
+         em {
+            @include styleText(inherit, 500, inherit);
+            font-style: normal;
+         }
+      }
+      div {
+         height: auto;
+         margin-top: 2.2em;
+         a {
+            padding: 1.3em 2.6em;
+            text-decoration: none;
+            font-size: 0.94em;
+            align-items: center;
+            &:hover {
+               span {
+                  color: $color-purple-1;
+               }
+            }
+            span {
+               line-height: 1.1;
+               letter-spacing: 0.5px;
+               text-transform: uppercase;
+               @include styleText(inherit, $fw-2, $color-white-1);
+            }
+         }
+      }
+   }
+
+   .banner-right {
+      .banner-right-content {
+         margin: -3em -4rem 0 -8rem;
+         float: left;
+         position: relative;
+         z-index: -1;
+         width: 100%;
+         .main-img {
+            width: 90%;
+            overflow: hidden;
+            img {
+               margin: 0;
+               line-height: 0;
+               height: auto;
+            }
+         }
+      }
+      .sub-img {
+         position: absolute;
+         &:nth-child(2) {
+            top: 7%;
+            right: 6%;
+         }
+         &:nth-child(3) {
+            top: 35%;
+            right: -20%;
+         }
+         &:nth-child(4) {
+            bottom: 12%;
+            right: -15%;
+         }
+         &:nth-child(5) {
+            bottom: 12%;
+            left: -15%;
+         }
+      }
+   }
+}
+
+.banner {
+   .container-fluid {
+      padding: 0;
+   }
+   .banner-img-footer {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 14%;
+      overflow: hidden;
+      z-index: -2;
+      img {
+         width: 100%;
+      }
+   }
+}
+@keyframes slideTop {
+   0% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(-50px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}

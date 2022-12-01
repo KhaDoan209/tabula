@@ -1,0 +1,64 @@
+.infor {
+   padding-top: 6rem;
+   background: $color-pink-1;
+   .infor-item {
+      &:hover {
+         .content-left {
+            i {
+               color: $color-purple-1;
+            }
+         }
+         .content-right {
+            a {
+               color: $color-black-1;
+            }
+            i {
+               color: $color-black-1 !important;
+            }
+         }
+      }
+      .content-left {
+         margin-right: 5%;
+         a {
+            text-decoration: none;
+            font-size: 13.5px;
+            &:hover {
+               i {
+                  color: $color-purple-1;
+               }
+            }
+            i {
+               @include styleText(3.2em, none, $color-black-1);
+            }
+         }
+      }
+      .content-right {
+         a {
+            text-decoration: none;
+         }
+         a {
+            .title {
+               text-decoration: none;
+               font-size: 0.9rem;
+            }
+         }
+         span {
+            @include styleText($fs-3 + 2, $fw-1, $color-black-1);
+            font-family: $roboto;
+            padding-top: 0.8em;
+         }
+         div {
+            padding-top: 1.2rem;
+            a {
+               font-size: 0.8rem;
+               line-height: 1;
+               letter-spacing: 0.5px;
+            }
+            i {
+               font-size: 0.8rem;
+               color: $color-purple-1;
+            }
+         }
+      }
+   }
+}
