@@ -1,4 +1,5 @@
 .banner {
+   position: relative;
    .banner-img {
       right: 0;
       left: 0;
@@ -100,7 +101,7 @@
       position: absolute;
       right: 0;
       left: 0;
-      bottom: 14%;
+      bottom: -8%;
       overflow: hidden;
       z-index: -2;
       img {

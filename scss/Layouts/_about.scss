@@ -1,0 +1,124 @@
+.about {
+   position: relative;
+   .container {
+      width: 100%;
+   }
+   .about-bg {
+      padding-top: 3rem;
+      background: url(../../img/purple_top_wave_01.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+   .about-content {
+      display: flex;
+      position: relative;
+   }
+}
+
+.about-left {
+   .about-left-img {
+      position: absolute;
+      top: 0;
+      left: -30%;
+      z-index: 1;
+      img {
+         width: 100%;
+      }
+   }
+   .about-left-carousel {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .about-left-text {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding-top: 20%;
+         padding-right: 10%;
+         width: 100%;
+         img {
+            width: 150px;
+            margin-bottom: 8%;
+         }
+         blockquote {
+            p {
+               font-style: italic;
+
+               @include styleText(1.8em, 300, black);
+            }
+         }
+         h5 {
+            margin-top: 3%;
+            font-size: 12px;
+         }
+         h6 {
+            @include styleText(1rem, 400, black);
+         }
+      }
+   }
+}
+
+.about-right {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   .about-right-content {
+      padding: 10% 0;
+      margin-left: 10%;
+      .title {
+         font-size: 1.1rem;
+      }
+      h2 {
+         font-size: 3.8rem;
+         @include styleText(3.8rem, $fw-4, black);
+      }
+      p {
+         font-size: 1.2rem;
+         margin-top: 0.9rem;
+         font-family: $montserrat;
+      }
+      div {
+         margin-top: 15%;
+         a {
+            padding: 1.1rem 2.3rem;
+            text-decoration: none;
+            font-size: 0.94rem;
+            text-transform: uppercase;
+            font-weight: 600;
+         }
+      }
+   }
+}
+
+.owl-carousel {
+   .owl-nav {
+      display: none;
+      visibility: hidden;
+   }
+   .owl-dots {
+      margin-top: 5%;
+      display: flex;
+      justify-content: flex-start;
+      .owl-dot.active {
+         span {
+            background: $color-purple-1;
+            transform: scale(1.2);
+         }
+      }
+      .owl-dot {
+         span {
+            transition: all 0.3s;
+            transform: scale(1);
+            background: $color-yellow-1;
+         }
+         &:hover {
+            span {
+               background: $color-purple-1;
+               transform: scale(1.2);
+            }
+         }
+      }
+   }
+}

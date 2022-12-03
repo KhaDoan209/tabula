@@ -261,6 +261,9 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   transform: scale(1);
 }
 
+.banner {
+  position: relative;
+}
 .banner .banner-img {
   right: 0;
   left: 0;
@@ -360,7 +363,7 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 14%;
+  bottom: -8%;
   overflow: hidden;
   z-index: -2;
 }
@@ -444,4 +447,121 @@ header .main-menu li:nth-child(1):hover .sub-menu {
 .infor .infor-item .content-right div i {
   font-size: 0.8rem;
   color: #b61984;
+}
+
+.about {
+  position: relative;
+}
+.about .container {
+  width: 100%;
+}
+.about .about-bg {
+  padding-top: 3rem;
+  background: url(../../img/purple_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about .about-content {
+  display: flex;
+  position: relative;
+}
+
+.about-left .about-left-img {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  z-index: 1;
+}
+.about-left .about-left-img img {
+  width: 100%;
+}
+.about-left .about-left-carousel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-left .about-left-carousel .about-left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20%;
+  padding-right: 10%;
+  width: 100%;
+}
+.about-left .about-left-carousel .about-left-text img {
+  width: 150px;
+  margin-bottom: 8%;
+}
+.about-left .about-left-carousel .about-left-text blockquote p {
+  font-style: italic;
+  font-size: 1.8em;
+  font-weight: 300;
+  color: black;
+}
+.about-left .about-left-carousel .about-left-text h5 {
+  margin-top: 3%;
+  font-size: 12px;
+}
+.about-left .about-left-carousel .about-left-text h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+}
+
+.about-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.about-right .about-right-content {
+  padding: 10% 0;
+  margin-left: 10%;
+}
+.about-right .about-right-content .title {
+  font-size: 1.1rem;
+}
+.about-right .about-right-content h2 {
+  font-size: 3.8rem;
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: black;
+}
+.about-right .about-right-content p {
+  font-size: 1.2rem;
+  margin-top: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+}
+.about-right .about-right-content div {
+  margin-top: 15%;
+}
+.about-right .about-right-content div a {
+  padding: 1.1rem 2.3rem;
+  text-decoration: none;
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.owl-carousel .owl-nav {
+  display: none;
+  visibility: hidden;
+}
+.owl-carousel .owl-dots {
+  margin-top: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: #b61984;
+  transform: scale(1.2);
+}
+.owl-carousel .owl-dots .owl-dot span {
+  transition: all 0.3s;
+  transform: scale(1);
+  background: #ffde39;
+}
+.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #b61984;
+  transform: scale(1.2);
 }/*# sourceMappingURL=main.css.map */
