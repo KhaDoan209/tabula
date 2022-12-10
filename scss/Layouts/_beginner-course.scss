@@ -1,0 +1,55 @@
+.beginner-course {
+   background: $color-pink-1;
+   background-image: url(../../img/white_top_wave_01.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   .beginner-course-content {
+      display: flex;
+      .beginner-course-left {
+         width: 50%;
+         padding: 0 15px;
+      }
+      .beginner-course-right {
+         width: 50%;
+         padding: 0 15px;
+      }
+   }
+}
+
+.beginner-course-left {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   .title {
+      font-size: 1rem;
+      margin-bottom: 0.6em;
+   }
+   h1 {
+      @include styleText(3.15rem, $fw-4, $color-black-1);
+      margin-bottom: 0.8em;
+   }
+   span {
+      font-family: $roboto;
+      width: 480px;
+   }
+   div {
+      margin-top: 3.2rem;
+      a {
+         text-decoration: none;
+         padding: 0.5em 2.2em;
+         i {
+            font-size: 12px;
+         }
+         span {
+            line-height: 1.2;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: $montserrat;
+         }
+      }
+   }
+   margin-top: 1.2rem;
+}

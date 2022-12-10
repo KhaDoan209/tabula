@@ -1,0 +1,122 @@
+.inter-course {
+   background: $color-pink-1;
+   padding: 0;
+   position: relative;
+   .inter-course-bg {
+      background-image: url(../../img/white_bottom_wave_02.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      background-position: center;
+      bottom: -10%;
+      right: 0;
+      height: 100%;
+      left: 0;
+      width: 100%;
+   }
+   .inter-course-content {
+      display: flex;
+      .inter-course-left,
+      .inter-course-right {
+         width: 50%;
+      }
+   }
+}
+.inter-course-left {
+   div {
+      padding: 0 20px;
+   }
+}
+.inter-right-content {
+   padding: 0 20px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   .title {
+      font-size: 1rem;
+      margin-bottom: 0.6em;
+   }
+   h1 {
+      @include styleText(3.15rem, $fw-4, $color-black-1);
+      margin-bottom: 0.8em;
+   }
+   span {
+      font-family: $roboto;
+      width: 480px;
+   }
+   div {
+      margin-top: 3.2rem;
+      a {
+         text-decoration: none;
+         padding: 17.64px 32.76px;
+
+         span {
+            line-height: 1.1;
+            font-size: 14.1px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: $montserrat;
+         }
+      }
+   }
+   margin-top: 1.2rem;
+}
+.inter-right-content {
+   ul {
+      list-style: none;
+      padding: 0;
+      padding-top: 40px;
+      a {
+         line-height: 0.5;
+         text-decoration: none;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+         &:hover {
+            .inter-right-list {
+               i {
+                  color: $color-purple-1 !important;
+               }
+            }
+         }
+         .inter-right-list {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            i {
+               color: $color-black-1;
+               font-size: 1.5em;
+               line-height: 1;
+               transition: all 300ms ease;
+            }
+            h6 {
+               text-transform: uppercase;
+               font-family: $montserrat;
+               @include styleText(0.9em, $fw-2, $color-purple-1);
+               border: none !important;
+               padding: 1.3em 1.5em;
+               margin: 0;
+            }
+         }
+         .inter-right-list-plus {
+            margin-top: 0;
+            i {
+               display: block;
+               width: 1.6em;
+               height: 1.6em;
+               line-height: 1.6em;
+               text-align: center;
+               border-radius: 50%;
+               color: #181818;
+               box-shadow: 0 0 0 1px #181818 inset;
+               opacity: 0.6;
+            }
+         }
+      }
+   }
+   div {
+      margin-top: 3rem;
+   }
+}
