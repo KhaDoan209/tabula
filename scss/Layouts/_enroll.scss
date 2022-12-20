@@ -1,0 +1,49 @@
+.enroll {
+   padding-top: 9rem;
+   .enroll-left {
+      padding: 0 20px;
+   }
+   .enroll-right {
+      padding: 0 20px;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+      height: 100%;
+      .enroll-right-content {
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         .title {
+            font-size: 2.5em;
+         }
+      }
+   }
+}
+
+.enroll {
+   .enroll-input {
+      outline: none;
+      transition: all 500ms;
+      border-radius: 50px;
+      font: inherit;
+      width: 100%;
+      background: transparent;
+      line-height: 1;
+      padding: 1em 1em 1em 3.5em;
+      font-size: $fs-1;
+      height: 3.7em;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      &:focus {
+         border: 1px solid rgba(0, 0, 0, 0.3);
+         box-shadow: 0 0 4px 0 rgb(0, 0, 0, 10%);
+      }
+   }
+   .icon-enroll {
+      position: absolute;
+      top: 1em;
+      left: 2em;
+      line-height: 1;
+      color: $color-purple-1;
+   }
+}

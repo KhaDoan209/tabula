@@ -84,13 +84,30 @@ section {
   color: #f1f1f1;
 }
 
-.title {
+.sub-title {
   font-size: 1.2rem;
   font-weight: 600;
   color: #b61984;
   margin-bottom: 0.3rem;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #181818;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+.paragraph {
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8em;
+  margin: 0 0 1em;
 }
 
 header {
@@ -266,6 +283,7 @@ header .main-menu li:nth-child(1):hover .sub-menu {
 }
 
 .banner {
+  padding: 0;
   position: relative;
 }
 .banner .banner-img {
@@ -288,20 +306,8 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   padding: 50% 0;
   height: auto;
 }
-.banner .banner-left-content h5 {
-  line-height: 1.2;
-}
-.banner .banner-left-content span {
-  font-size: 6.4rem;
-  font-weight: 700;
-  color: inherit;
-  line-height: 1.2;
-}
-.banner .banner-left-content span em {
-  font-size: inherit;
-  font-weight: 500;
-  color: inherit;
-  font-style: normal;
+.banner .banner-left-content l .sub-title {
+  color: red;
 }
 .banner .banner-left-content div {
   height: auto;
@@ -324,41 +330,6 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   font-weight: 600;
   color: #f1f1f1;
 }
-.banner .banner-right .banner-right-content {
-  margin: -3em -4rem 0 -8rem;
-  float: left;
-  position: relative;
-  z-index: -1;
-  width: 100%;
-}
-.banner .banner-right .banner-right-content .main-img {
-  width: 90%;
-  overflow: hidden;
-}
-.banner .banner-right .banner-right-content .main-img img {
-  margin: 0;
-  line-height: 0;
-  height: auto;
-}
-.banner .banner-right .sub-img {
-  position: absolute;
-}
-.banner .banner-right .sub-img:nth-child(2) {
-  top: 7%;
-  right: 6%;
-}
-.banner .banner-right .sub-img:nth-child(3) {
-  top: 35%;
-  right: -20%;
-}
-.banner .banner-right .sub-img:nth-child(4) {
-  bottom: 12%;
-  right: -15%;
-}
-.banner .banner-right .sub-img:nth-child(5) {
-  bottom: 12%;
-  left: -15%;
-}
 
 .banner .container-fluid {
   padding: 0;
@@ -367,7 +338,7 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: -8%;
+  bottom: 0;
   overflow: hidden;
   z-index: -2;
 }
@@ -375,547 +346,111 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   width: 100%;
 }
 
-@-webkit-keyframes slideTop {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideTop {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .infor {
-  padding-top: 6rem;
-  background: #dcd1f3;
-}
-.infor .infor-item:hover .content-left i {
-  color: #b61984;
-}
-.infor .infor-item:hover .content-right a {
-  color: #181818;
-}
-.infor .infor-item:hover .content-right i {
-  color: #181818 !important;
-}
-.infor .infor-item .content-left {
-  margin-right: 5%;
-}
-.infor .infor-item .content-left a {
-  text-decoration: none;
-  font-size: 13.5px;
-}
-.infor .infor-item .content-left a:hover i {
-  color: #b61984;
-}
-.infor .infor-item .content-left a i {
-  font-size: 3.2em;
-  font-weight: none;
-  color: #181818;
-}
-.infor .infor-item .content-right a {
-  text-decoration: none;
-}
-.infor .infor-item .content-right a .title {
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-.infor .infor-item .content-right span {
-  font-size: 15px;
-  font-weight: 400;
-  color: #181818;
-  font-family: "Roboto", sans-serif;
-  padding-top: 0.8em;
-}
-.infor .infor-item .content-right div {
-  padding-top: 1.2rem;
-}
-.infor .infor-item .content-right div a {
-  font-size: 0.8rem;
-  line-height: 1;
-  letter-spacing: 0.5px;
-}
-.infor .infor-item .content-right div i {
-  font-size: 0.8rem;
-  color: #b61984;
+  padding: 0;
+  background-color: #dcd1f3;
+  position: relative;
+  z-index: -2;
 }
 
-.about {
-  padding-top: 0;
-  position: relative;
-}
-.about .container {
-  width: 100%;
-}
-.about .about-bg {
-  padding-top: 3rem;
-  background: url(../../img/purple_top_wave_01.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.about .about-content {
-  display: flex;
-  position: relative;
-}
-
-.about-left .about-left-img {
-  position: absolute;
-  top: 0;
-  left: -30%;
-  z-index: 1;
-}
-.about-left .about-left-img img {
-  width: 100%;
-}
-.about-left .about-left-carousel {
+.infor .feature-right {
   height: 100%;
+  padding: 0 20px;
   display: flex;
-  align-items: center;
-}
-.about-left .about-left-carousel .about-left-text {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-top: 20%;
-  padding-right: 10%;
-  width: 100%;
+  flex-flow: column nowrap;
 }
-.about-left .about-left-carousel .about-left-text img {
-  width: 150px;
-  margin-bottom: 8%;
+.infor .feature-right h5 {
+  font-size: 15px;
 }
-.about-left .about-left-carousel .about-left-text blockquote p {
-  font-style: italic;
-  font-size: 1.8em;
-  font-weight: 300;
-  color: black;
-}
-.about-left .about-left-carousel .about-left-text h5 {
-  margin-top: 3%;
-  font-size: 12px;
-}
-.about-left .about-left-carousel .about-left-text h6 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: black;
+.infor .feature-right h1 {
+  font-size: 3.15rem;
 }
 
-.about-right {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
-.about-right .about-right-content {
-  padding: 10% 0;
-  margin-left: 10%;
-}
-.about-right .about-right-content .title {
-  font-size: 1.1rem;
-}
-.about-right .about-right-content h2 {
-  font-size: 3.8rem;
-  font-size: 3.8rem;
-  font-weight: 700;
-  color: black;
-}
-.about-right .about-right-content p {
-  font-size: 1.2rem;
-  margin-top: 0.9rem;
-  font-family: "Montserrat", sans-serif;
-}
-.about-right .about-right-content div {
-  margin-top: 15%;
-}
-.about-right .about-right-content div a {
-  padding: 1.1rem 2.3rem;
-  text-decoration: none;
-  font-size: 0.94rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.owl-carousel .owl-nav {
-  display: none;
-  visibility: hidden;
-}
-.owl-carousel .owl-dots {
-  margin-top: 5%;
-  display: flex;
-  justify-content: flex-start;
-}
-.owl-carousel .owl-dots .owl-dot.active span {
-  background: #b61984;
-  transform: scale(1.2);
-}
-.owl-carousel .owl-dots .owl-dot span {
-  transition: all 0.3s;
-  transform: scale(1);
-  background: #ffde39;
-}
-.owl-carousel .owl-dots .owl-dot:hover span {
-  background: #b61984;
-  transform: scale(1.2);
-}
-
-.courses {
-  margin-top: 12rem;
-}
-.courses .course-item {
-  padding: 0 15px;
+.infor .infor-item {
+  background: white;
   border-radius: 10px;
-  transition: all 0.6s ease-in-out;
-}
-.courses .course-item:hover {
-  box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.2);
-}
-.courses .course-item:hover .item-img img {
-  transform: scale(1.1);
-}
-.courses .course-item .item-img {
   overflow: hidden;
+  transition: all 650ms ease-in-out;
 }
-.courses .course-item .item-img img {
+.infor .infor-item:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.infor .infor-item .infor-img:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.infor .infor-item .infor-img img {
+  transition: all 350ms ease-in-out;
+  transform: scale3d(1, 1, 1);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: all 0.6s ease-in-out;
-  transform: scale(1);
 }
-.courses .course-item .item-text {
-  overflow: hidden;
-  position: relative;
-  padding: 1.5em 3em 3em 3em;
+.infor .infor-item .infor-text {
+  text-align: center;
+  padding: 20px 20px;
+  line-height: 1.8;
 }
-.courses .course-item .item-text div {
-  font-size: 0.75em;
-  font-weight: 600;
-  color: #181818;
-  text-transform: uppercase;
-  padding-bottom: 1em;
+.infor .infor-item .infor-text h6 {
+  font-size: 0.75rem;
+  margin-bottom: 0.7rem;
 }
-.courses .course-item .item-text h1 {
-  position: relative;
-  font-size: 1.6em;
-  font-weight: 700;
-  color: #181818;
-  padding-bottom: 0.5em;
+.infor .infor-item .infor-text h2 {
+  font-size: 1.55rem;
 }
-.courses .course-item .item-text h1::before {
-  font-size: 4rem;
-  position: absolute;
-  display: block;
-  color: #b61984;
-  width: auto !important;
-  margin: 0 !important;
-  border: none;
-  top: -0.2em;
-  left: -1.2em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f075";
-  transform: rotate(-120deg);
-}
-.courses .course-item .item-text span {
-  overflow: hidden;
-  max-height: 5.3em;
-  position: relative;
-  font-size: 15px;
-  font-weight: 400;
-  color: #181818;
-  font-family: "Roboto", sans-serif;
-}
-.courses .course-item .item-text div {
-  margin-top: 1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: baseline;
-  cursor: pointer;
-}
-.courses .course-item .item-text div a {
-  text-decoration: none;
-  font-size: 12px;
-}
-.courses .course-item .item-text div i {
-  color: #b61984;
-  padding: 0 0.5em;
-}
-.courses .course-item .item-text div:hover a,
-.courses .course-item .item-text div:hover i {
-  color: #181818;
-}
-
-.beginner-course {
-  background: #dcd1f3;
-  background-image: url(../../img/white_top_wave_01.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.beginner-course .beginner-course-content {
-  display: flex;
-}
-.beginner-course .beginner-course-content .beginner-course-left {
-  width: 50%;
-  padding: 0 15px;
-}
-.beginner-course .beginner-course-content .beginner-course-right {
-  width: 50%;
-  padding: 0 15px;
-}
-
-.beginner-course-left {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 1.2rem;
-}
-.beginner-course-left .title {
-  font-size: 1rem;
-  margin-bottom: 0.6em;
-}
-.beginner-course-left h1 {
-  font-size: 3.15rem;
-  font-weight: 700;
-  color: #181818;
-  margin-bottom: 0.8em;
-}
-.beginner-course-left span {
-  font-family: "Roboto", sans-serif;
-  width: 480px;
-}
-.beginner-course-left div {
-  margin-top: 3.2rem;
-}
-.beginner-course-left div a {
-  text-decoration: none;
-  padding: 0.5em 2.2em;
-}
-.beginner-course-left div a i {
-  font-size: 12px;
-}
-.beginner-course-left div a span {
-  line-height: 1.2;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.inter-course {
-  background: #dcd1f3;
-  padding: 0;
-  position: relative;
-}
-.inter-course .inter-course-bg {
-  background-image: url(../../img/white_bottom_wave_02.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  background-position: center;
-  bottom: -10%;
-  right: 0;
-  height: 100%;
-  left: 0;
-  width: 100%;
-}
-.inter-course .inter-course-content {
-  display: flex;
-}
-.inter-course .inter-course-content .inter-course-left,
-.inter-course .inter-course-content .inter-course-right {
-  width: 50%;
-}
-
-.inter-course-left div {
-  padding: 0 20px;
-}
-
-.inter-right-content {
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 1.2rem;
-}
-.inter-right-content .title {
-  font-size: 1rem;
-  margin-bottom: 0.6em;
-}
-.inter-right-content h1 {
-  font-size: 3.15rem;
-  font-weight: 700;
-  color: #181818;
-  margin-bottom: 0.8em;
-}
-.inter-right-content span {
-  font-family: "Roboto", sans-serif;
-  width: 480px;
-}
-.inter-right-content div {
-  margin-top: 3.2rem;
-}
-.inter-right-content div a {
-  text-decoration: none;
-  padding: 17.64px 32.76px;
-}
-.inter-right-content div a span {
-  line-height: 1.1;
-  font-size: 14.1px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.inter-right-content ul {
-  list-style: none;
-  padding: 0;
-  padding-top: 40px;
-}
-.inter-right-content ul a {
-  line-height: 0.5;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.inter-right-content ul a:hover .inter-right-list i {
-  color: #b61984 !important;
-}
-.inter-right-content ul a .inter-right-list {
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-}
-.inter-right-content ul a .inter-right-list i {
-  color: #181818;
-  font-size: 1.5em;
-  line-height: 1;
-  transition: all 300ms ease;
-}
-.inter-right-content ul a .inter-right-list h6 {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9em;
-  font-weight: 600;
-  color: #b61984;
-  border: none !important;
-  padding: 1.3em 1.5em;
+.infor .infor-item .infor-text p {
   margin: 0;
 }
-.inter-right-content ul a .inter-right-list-plus {
-  margin-top: 0;
-}
-.inter-right-content ul a .inter-right-list-plus i {
-  display: block;
-  width: 1.6em;
-  height: 1.6em;
-  line-height: 1.6em;
-  text-align: center;
-  border-radius: 50%;
-  color: #181818;
-  box-shadow: 0 0 0 1px #181818 inset;
-  opacity: 0.6;
-}
-.inter-right-content div {
-  margin-top: 3rem;
+.infor .infor-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }
 
-.schedule {
-  margin-top: 5rem;
+.enroll {
+  padding-top: 9rem;
 }
-.schedule .schedule-content .schedule-title {
-  text-align: center;
+.enroll .enroll-left {
+  padding: 0 20px;
 }
-.schedule .schedule-content .schedule-title h1 {
-  font-size: 57px;
-  font-weight: 700;
-  color: #181818;
-  padding-bottom: 5%;
-}
-
-.schedule-item-content {
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 15px 25px -15px rgba(0, 0, 0, 0.2);
-  background-color: #efefef;
-}
-.schedule-item-content .schedule-item-header {
-  border-radius: 10px 10px 0 0;
-  background-size: cover;
-  background-position: center center;
-  padding: 4em 2em;
-}
-.schedule-item-content .schedule-item-header .sub-title {
-  font-size: 12px;
-  font-weight: normal;
-  color: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.schedule-item-content .schedule-item-header .title {
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #f1f1f1;
-  text-transform: capitalize;
-}
-.schedule-item-content .schedule-item-body div {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.4em 2em;
-  border-bottom: 1px solid rgba(82, 82, 82, 0.1);
-  font-size: 0.87em;
-}
-.schedule-item-content .schedule-item-body div:nth-child(6) {
-  border-bottom: none;
-}
-.schedule-item-content .schedule-item-body div span {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.schedule-item-content .schedule-item-body .schedule-item-focused {
+.enroll .enroll-right {
+  padding: 0 20px;
+  border-radius: 10px;
   background: white;
-  display: block;
-  border-bottom: none;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  height: 100%;
 }
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item {
-  margin-bottom: 0;
+.enroll .enroll-right .enroll-right-content {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  border-bottom: none;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item span {
-  font-weight: 600;
-  text-transform: uppercase;
+.enroll .enroll-right .enroll-right-content .title {
+  font-size: 2.5em;
 }
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item:nth-child(1) {
-  color: #b61984;
+
+.enroll .enroll-input {
+  outline: none;
+  transition: all 500ms;
+  border-radius: 50px;
+  font: inherit;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  padding: 1em 1em 1em 3.5em;
+  font-size: 0.8em;
+  height: 3.7em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item:nth-child(2) {
-  color: #181818;
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
+.enroll .enroll-input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item:nth-child(2) span {
-  text-transform: capitalize;
-  font-weight: 400;
-}
-.schedule-item-content .schedule-item-body .schedule-item-focused .sub-item:nth-child(2) span i {
-  margin-right: 6px;
+.enroll .icon-enroll {
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  line-height: 1;
   color: #b61984;
 }/*# sourceMappingURL=main.css.map */
