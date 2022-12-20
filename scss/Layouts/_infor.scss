@@ -1,64 +1,68 @@
 .infor {
-   padding-top: 6rem;
-   background: $color-pink-1;
+   padding: 0;
+   background-color: $color-pink-1;
+   position: relative;
+   z-index: -2;
+}
+
+.infor {
+   .feature-right {
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      flex-flow: column nowrap;
+      h5 {
+         font-size: 15px;
+      }
+      h1 {
+         font-size: 3.15rem;
+      }
+   }
+}
+
+.infor {
    .infor-item {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 650ms ease-in-out;
       &:hover {
-         .content-left {
-            i {
-               color: $color-purple-1;
+         box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+      }
+      .infor-img {
+         &:hover {
+            img {
+               transform: scale3d(1.05, 1.05, 1.05);
             }
          }
-         .content-right {
-            a {
-               color: $color-black-1;
-            }
-            i {
-               color: $color-black-1 !important;
-            }
+         img {
+            transition: all 350ms ease-in-out;
+            transform: scale3d(1, 1, 1);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
          }
       }
-      .content-left {
-         margin-right: 5%;
-         a {
-            text-decoration: none;
-            font-size: 13.5px;
-            &:hover {
-               i {
-                  color: $color-purple-1;
-               }
-            }
-            i {
-               @include styleText(3.2em, none, $color-black-1);
-            }
+      .infor-text {
+         text-align: center;
+         padding: 20px 20px;
+         line-height: 1.8;
+         h6 {
+            font-size: 0.75rem;
+            margin-bottom: 0.7rem;
+         }
+         h2 {
+            font-size: 1.55rem;
+         }
+         p {
+            margin: 0;
          }
       }
-      .content-right {
-         a {
-            text-decoration: none;
-         }
-         a {
-            .title {
-               text-decoration: none;
-               font-size: 0.9rem;
-            }
-         }
-         span {
-            @include styleText($fs-3 + 2, $fw-1, $color-black-1);
-            font-family: $roboto;
-            padding-top: 0.8em;
-         }
-         div {
-            padding-top: 1.2rem;
-            a {
-               font-size: 0.8rem;
-               line-height: 1;
-               letter-spacing: 0.5px;
-            }
-            i {
-               font-size: 0.8rem;
-               color: $color-purple-1;
-            }
-         }
-      }
+   }
+   .infor-bg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      z-index: -1;
    }
 }
