@@ -84,6 +84,35 @@ section {
   color: #f1f1f1;
 }
 
+.button-white {
+  background: #f1f1f1;
+  border: none;
+  border-radius: 50px;
+  padding: 1.4em 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #181818;
+  margin: 6px;
+  margin-top: 10%;
+  text-align: center;
+  align-content: flex-start;
+  align-items: center;
+  line-height: 1;
+  box-shadow: 0 0 0 3em #f1f1f1 inset;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.button-white:hover {
+  box-shadow: 0 0 0 1px #f1f1f1 inset;
+  text-decoration: none;
+}
+.button-white:hover:hover {
+  background: none;
+  border: none;
+  color: #f1f1f1;
+}
+
 .sub-title {
   font-size: 1.2rem;
   font-weight: 600;
@@ -409,25 +438,39 @@ header .main-menu li:nth-child(1):hover .sub-menu {
 
 .enroll {
   padding-top: 9rem;
+  position: relative;
 }
 .enroll .enroll-left {
   padding: 0 20px;
 }
 .enroll .enroll-right {
   padding: 0 20px;
-  border-radius: 10px;
-  background: white;
-  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
-  height: 100%;
 }
 .enroll .enroll-right .enroll-right-content {
+  border-radius: 10px;
   height: 100%;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  background: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  padding-bottom: 20%;
 }
 .enroll .enroll-right .enroll-right-content .title {
   font-size: 2.5em;
+}
+.enroll .enroll-right .enroll-right-content .button-purple {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  width: 40%;
+  padding: 1.4em 1.5em;
+}
+.enroll .enroll-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .enroll .enroll-input {
@@ -442,10 +485,17 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   font-size: 0.8em;
   height: 3.7em;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 .enroll .enroll-input:focus {
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.enroll .enroll-textarea {
+  height: 90px !important;
+  padding: 1em 1em 1em 3.5em;
+  width: 100%;
+  border-radius: 20px;
 }
 .enroll .icon-enroll {
   position: absolute;
@@ -453,4 +503,101 @@ header .main-menu li:nth-child(1):hover .sub-menu {
   left: 2em;
   line-height: 1;
   color: #b61984;
+}
+
+footer {
+  padding: 3rem 0;
+  background: #aa017e;
+}
+
+footer .col-3:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+footer .footer-item {
+  text-align: left;
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer ul li {
+  margin: 4% 0;
+  color: #f1f1f1;
+}
+footer ul li a {
+  transition: all 0.2s ease;
+  font-size: 1em;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+footer ul li a:hover {
+  color: #f1f1f1;
+  opacity: 0.8;
+  text-decoration: none;
+}
+footer .col-3:nth-child(1) ul li i {
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+footer .col-3:nth-child(1) .footer-social {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .col-3:nth-child(1) .footer-social a i {
+  color: #f1f1f1;
+}
+footer .col-3:nth-child(1) .footer-social a:hover i {
+  color: #181818;
+}
+footer .col-3:nth-child(2) ul,
+footer .col-3:nth-child(3) ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .col-3:nth-child(2) ul li,
+footer .col-3:nth-child(3) ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: 0.9em 0;
+}
+footer .col-3:nth-child(4) .footer-input {
+  display: flex;
+  justify-content: center;
+}
+footer .col-3:nth-child(4) .footer-input input {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease;
+  border-radius: 50px;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: white;
+}
+footer .col-3:nth-child(4) .footer-input input::-moz-placeholder {
+  color: #f1f1f1;
+}
+footer .col-3:nth-child(4) .footer-input input:-ms-input-placeholder {
+  color: #f1f1f1;
+}
+footer .col-3:nth-child(4) .footer-input input::placeholder {
+  color: #f1f1f1;
+}
+footer .col-3:nth-child(4) .footer-input input:focus {
+  border: 1px solid rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
